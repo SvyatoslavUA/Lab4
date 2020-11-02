@@ -21,8 +21,8 @@ int main()
 	for (int i = 0; i < 10; i++)
 	{
 		cout << "R = "; cin >> R;
-		x = 6. * rand() / RAND_MAX - 3;
-		y = 6. * rand() / RAND_MAX - 3;
+		x = -R + rand() * (2 * R) / RAND_MAX;
+		y = -R + rand() * (2 * R) / RAND_MAX;
 			if (((x * x + y * y) <= R * R && x <= 0 && y <= 0) ||
 				(y >= (x - 1) * (x - 1) && x >= 0 && (x * x + y * y) <= R * R))
 				cout << setw(8) << setprecision(4) << x << " "
